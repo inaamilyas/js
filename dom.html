@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            
+            color: red;
+        }
+        .size-20{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="heading">Hello javascript</h2>
+    <p class="para">Some text</p>
+    <!-- Dom  -->
+    <script>
+        let heading = document.getElementById("heading");
+        heading.innerText = heading.innerHTML + " by Apna College students";
+
+        /*Create a new button element and append to body*/
+        let btn = document.createElement("button");
+        btn.innerText="Click me!";
+        btn.style.backgroundColor='red';
+        btn.style.color='white';
+        document.querySelector('body').prepend(btn);
+
+        document.getElementsByClassName('para')[0].classList.add("size-20");
+
+    </script>
+</body>
+</html>
